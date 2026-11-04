@@ -1,0 +1,6 @@
+{
+  "name": "MDX JACKPOT",
+  "description": "MDX JACKPOT – Play & Win Virtually! Premium Android gaming experience featuring 15 games, virtual coin jackpots, daily rewards, and tournaments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

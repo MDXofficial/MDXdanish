@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    color: #f1f5f9;
+    background-color: #070709;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom Gold & Neon utilities */
+.gold-text-glow {
+  text-shadow: 0 0 12px rgba(245, 158, 11, 0.6), 0 0 24px rgba(217, 119, 6, 0.3);
+}
+
+.neon-green-glow {
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.7), 0 0 20px rgba(34, 197, 94, 0.4);
+}
+
+.gold-box-glow {
+  box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.35), 0 0 10px -2px rgba(245, 158, 11, 0.2);
+}
+
+.neon-box-glow {
+  box-shadow: 0 0 20px -5px rgba(34, 197, 94, 0.4), 0 0 8px -2px rgba(34, 197, 94, 0.25);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #b45309 100%);
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to bottom right, #fef08a, #f59e0b, #78350f) 1;
+}
+
+/* Slot Machine Reel Animations */
+@keyframes spin-vertical {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-300%); }
+  100% { transform: translateY(-600%); }
+}
+
+.animate-spin-reel {
+  animation: spin-vertical 0.4s ease-in-out infinite;
+}
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

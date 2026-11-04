@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#142918" />
+      <stop offset="60%" stop-color="#0a0f0c" />
+      <stop offset="100%" stop-color="#050607" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="25%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="75%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+    <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="50%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGlow)" />
+  <rect width="500" height="500" x="6" y="6" rx="106" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-opacity="0.8" />
+  <rect width="480" height="480" x="16" y="16" rx="96" fill="none" stroke="url(#neonGreen)" stroke-width="2" stroke-opacity="0.6" />
+
+  <!-- Shield Emblem -->
+  <path d="M 256 70 L 390 120 C 390 270 330 365 256 425 C 182 365 122 270 122 120 Z" fill="#0d1110" stroke="url(#goldGrad)" stroke-width="6" />
+
+  <!-- Crown on Shield -->
+  <path d="M 196 160 L 220 200 L 256 140 L 292 200 L 316 160 L 310 230 L 202 230 Z" fill="url(#goldGrad)" />
+  <circle cx="196" cy="155" r="5" fill="#22c55e" />
+  <circle cx="256" cy="135" r="7" fill="#22c55e" />
+  <circle cx="316" cy="155" r="5" fill="#22c55e" />
+
+  <!-- MDX Text -->
+  <text x="256" y="300" text-anchor="middle" font-family="'Outfit', 'Arial Black', sans-serif" font-weight="900" font-size="78" fill="url(#goldGrad)" filter="url(#glow)">MDX</text>
+  
+  <!-- JACKPOT Text -->
+  <rect x="156" y="325" width="200" height="34" rx="17" fill="#052e16" stroke="#22c55e" stroke-width="2" />
+  <text x="256" y="348" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="19" fill="#86efac" letter-spacing="4">JACKPOT</text>
+  
+  <!-- Stars -->
+  <polygon points="256,380 262,395 278,395 265,404 270,419 256,409 242,419 247,404 234,395 250,395" fill="url(#goldGrad)" />
+</svg>

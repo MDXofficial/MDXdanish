@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "MDX JACKPOT – Play & Win Virtually!",
+  "short_name": "MDX JACKPOT",
+  "description": "Premium Android gaming app featuring 15 interactive games, virtual coin jackpots, daily spins and leaderboard.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070709",
+  "theme_color": "#0a0a0c",
+  "categories": ["games", "casino", "entertainment"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
